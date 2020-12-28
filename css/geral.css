@@ -1,0 +1,217 @@
+/* GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #EEEFF5;
+    background-color: #31343F;
+}
+
+ul, li {
+    list-style: none;
+}
+
+:root {
+    font-size: 62.5%; /* 10px */
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    background-color: #21232B;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: .1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN */
+
+.mainContainer {
+    background-color: #1E2024;
+    border-radius: .8rem;
+    max-width: 60%;
+    margin: 4rem auto;
+    font-size: 2.5rem;
+    padding: 2rem;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, .33);
+}
+
+.headerContent {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    font-weight: bold;
+}
+
+.valorSaldoAtual {
+    display: block;
+    font-size: 3.5rem;
+    color: #8DA3F5;
+}
+
+.receitaDespesaContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.receita, .despesa {
+    width: 25rem;
+    background-color: #3250BE;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .3);
+}
+
+.receita {
+    border-right: 2px solid #8DA3F5;
+    border-radius: .5rem 0 0 .5rem;
+}
+.despesa {
+    border-radius:  0 .5rem .5rem 0;
+}
+
+.receita p, .despesa p {
+    padding-bottom: 1rem;
+}
+
+.valPositivo {
+    color: #59E199;
+    font-weight: bold;
+}
+
+.valNegativo {
+    color: #F57D89;
+    font-weight: bold;
+}
+
+/* TRANSAÇÕES */
+.transacoes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin: 5rem 0;
+}
+
+.transacoes label {
+    font-weight: bold;
+    position: relative;
+    right: 16.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.transacaoContainer {
+    background-color: #31343F;
+    min-width: 45.6rem;
+    min-height: 5rem;
+    font-size: 2rem;
+    border-radius: .6rem;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .3);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+ .btnDelete {
+    background: #E34A59;
+    padding: .3rem .7rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+
+    position: absolute;
+    left: .5rem;
+
+    opacity: 0;
+    transition: .3s;
+    transform: translate3d(-20px, 0, 0);
+
+} 
+
+.transacaoLista li:hover .btnDelete {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.transacaoLista li:hover .nomeTransacao {
+    margin-left: 3rem;
+}
+
+.nomeTransacao {
+    max-width: 40rem;
+    transition: .3s;
+}
+
+.transacaoLista {
+    height: 23rem;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.transacaoLista::-webkit-scrollbar {
+    width: 1.7rem;
+    background: #31343F;
+}
+
+.transacaoLista::-webkit-scrollbar-thumb {
+    background-color: #21232B;
+    border: 2px solid #31343F;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.btnAddTransacao {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #EEEFF5;
+
+    width: 45.6rem;
+    background-color: #3250BE;
+    border-radius: .5rem;
+    border: none;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    right: 1.4rem;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .3);
+
+    transition: .4s;
+}
+
+.btnAddTransacao:hover {
+    background-color:  #1a2f7c;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, .4);
+}

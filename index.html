@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Controle Financeiro</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Controle Financeiro</h1>
+    </header>
+
+    <main class="mainContainer">
+        <section class="headerContent">
+            <div class="saldoAtualContainer">
+                <span>Saldo Atual</span>
+                <label class="valorSaldoAtual" id="valorSaldoAtual">R$ 00.00</label>
+            </div>
+
+            <div class="receitaDespesaContainer">
+                <div class="receita">
+                    <p>Receitas</p>
+                    <label id="valorReceita" class="valPositivo">R$ 00.00</label>
+                </div>
+
+                <div class="despesa">
+                    <p>Despesas</p>
+                    <label id="valorDespesa" class="valNegativo">R$ 00.00</label>
+                </div>
+            </div>
+        </section>
+
+        <section class="transacoes">
+            <label>Transações</label>
+
+            <ul class="transacaoLista"></ul>
+        </section>
+
+        <div class="btnDiv">
+            <button class="btnAddTransacao" id="btnAddTransacao">Adicionar Transações</button>
+        </div>
+    </main>
+
+    <section class="containerModal">
+        <div class="formGeral ">
+            <p>Adicionar Transação</p>
+            <button class="btnFecharModal" id="btnFecharModal">X</button>
+
+            <div class="divNome">
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Nome da Transação" id="nomeTransacaoInput">
+            </div>
+
+            <div class="divValor">
+                <label for="valor">Valor: Receita(+) Despesa(-)</label>
+                <input type="number" placeholder="Valor da Transação" id="valorTransacaoInput">
+            </div>
+
+            <button class="btnAddTransacaoModal" id="btnAddTransacaoModal">Adicionar</button>
+        </div>
+    </section>
+
+    <script type="module" src="src/script.js"></script>
+</body>
+
+</html>

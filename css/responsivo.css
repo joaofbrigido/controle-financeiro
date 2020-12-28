@@ -1,0 +1,56 @@
+@media (max-width: 1360px) {
+
+    .headerContent {
+        grid-template-columns: 1fr 2.1fr;
+    }   
+    .mainContainer {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 1130px) {
+    .receita, .despesa {
+        margin-top: 3rem;
+    }
+    .receitaDespesaContainer {
+        grid-column: span 2;
+        justify-content: center;
+    }
+    .saldoAtualContainer {
+        grid-column: 1 / 3;
+        justify-self: center;
+    }
+    .mainContainer {
+        max-width: 90%;
+    }
+    .nomeTransacao {
+        max-width: 30rem;
+    }
+    .valorSaldoAtual {
+        text-align: center;
+    }
+    .header{
+        display: block;
+    }
+}
+
+@media (max-width: 615px) {
+    .transacaoContainer {
+        min-width: 37rem;
+    }
+    .btnAddTransacao{
+        width: 37rem;
+    }
+
+    .receita, .despesa {
+        border: none;
+        border-radius: .5rem;
+    }
+
+    .transacoes label {
+        right:   12.2rem;
+    }
+    .nomeTransacao {
+        max-width: 20rem;
+    }
+}
