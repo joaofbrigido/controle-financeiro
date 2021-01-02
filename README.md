@@ -1,2 +1,2 @@
 # controle-financeiro
-Aplicação Web que faz o Controle Financeiro
+Aplicação Web que faz um Controle de Receita e Despezas
