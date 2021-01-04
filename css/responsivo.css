@@ -1,4 +1,4 @@
-@media (max-width: 1360px) {
+@media (max-width: 1455px) {
 
     .headerContent {
         grid-template-columns: 1fr 2.1fr;
@@ -34,7 +34,7 @@
     }
 }
 
-@media (max-width: 615px) {
+@media (max-width: 600px) {
     .transacaoContainer {
         min-width: 37rem;
     }
@@ -52,5 +52,26 @@
     }
     .nomeTransacao {
         max-width: 20rem;
+    }
+    .header h1 {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .transacaoContainer {
+        min-width: 25rem;
+        font-size: 18px;
+    }
+    .nomeTransacao {
+        max-width: 13rem;
+        /* overflow: hidden; */
+    }
+    .btnAddTransacao{
+        width: 20rem;
+        font-size: 18px;
+    }
+    .transacoes label {
+        right: 6.4rem;
     }
 }
